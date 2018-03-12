@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_api/lm_shop_api.iml" filepath="$PROJECT_DIR$/lm_shop_api/lm_shop_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_api/lm_shop_api_member/lm_shop_api_member.iml" filepath="$PROJECT_DIR$/lm_shop_api/lm_shop_api_member/lm_shop_api_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_common/lm_shop_common.iml" filepath="$PROJECT_DIR$/lm_shop_common/lm_shop_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_eurekaserver/lm_shop_eurekaserver.iml" filepath="$PROJECT_DIR$/lm_shop_eurekaserver/lm_shop_eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_member/lm_shop_member.iml" filepath="$PROJECT_DIR$/lm_shop_member/lm_shop_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_parent.iml" filepath="$PROJECT_DIR$/lm_shop_parent.iml" />
+    </modules>
+  </component>
+</project>
