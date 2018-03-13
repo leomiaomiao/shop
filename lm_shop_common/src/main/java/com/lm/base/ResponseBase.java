@@ -1,5 +1,12 @@
 package com.lm.base;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
+
+@Getter
+@Setter
+@Slf4j
 public class ResponseBase {
     // 响应code
     private Integer code;
@@ -18,28 +25,8 @@ public class ResponseBase {
         this.data = data;
     }
 
-    public Integer getCode() {
-        return code;
-    }
+    public static void main(String[] args) {
 
-    public void setCode(Integer code) {
-        this.code = code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public Object getData() {
-        return data;
-    }
-
-    public void setData(Object data) {
-        this.data = data;
     }
 
 }
