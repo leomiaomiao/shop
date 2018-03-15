@@ -1,4 +1,4 @@
-package com.lm.api.service;
+package com.lm.api.service.impl;
 
 import com.lm.base.BaseApiService;
 import com.lm.base.ResponseBase;
