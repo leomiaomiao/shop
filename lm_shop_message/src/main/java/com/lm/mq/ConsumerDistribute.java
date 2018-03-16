@@ -11,10 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
+//*
+// 消息消费者
+// */
 @Component
 @Slf4j
 public class ConsumerDistribute {
-
     @Autowired
     private EmailService emailService;
     private MessageAdapter messageAdapter;

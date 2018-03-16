@@ -1,4 +1,4 @@
-package com.lm.api.service.impl;
+package com.lm.api.service;
 
 import com.lm.base.ResponseBase;
 import org.springframework.web.bind.annotation.RequestMapping;

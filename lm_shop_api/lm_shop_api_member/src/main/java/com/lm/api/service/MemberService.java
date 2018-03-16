@@ -1,9 +1,10 @@
-package com.lm.api.service.impl;
+package com.lm.api.service;
 
 import com.lm.base.ResponseBase;
 import com.lm.entity.UserEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @RequestMapping("/member")
 public interface MemberService {
@@ -14,4 +15,10 @@ public interface MemberService {
     //用户注册
     @RequestMapping("/regUser")
     ResponseBase regUser(@RequestBody UserEntity userEntity);
+    //用户登录
+    @RequestMapping("/login")
+    ResponseBase login(@RequestBody UserEntity userEntity);
+    //使用token进行登录
+    @RequestMapping("/findUserByToken")
+    ResponseBase findUserByToken(String token);
 }
