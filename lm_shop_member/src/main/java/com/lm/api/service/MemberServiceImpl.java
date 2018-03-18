@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 @Slf4j
 @RestController
 public class MemberServiceImpl extends BaseApiService implements MemberService{
@@ -45,6 +47,8 @@ public class MemberServiceImpl extends BaseApiService implements MemberService{
         }
         String newPassword = MD5Util.MD5(password);
         userEntity.setPassword(newPassword);
+        userEntity.setCreated(new Date());
+        userEntity.setUpdated(new Date());
         Integer result = memberDao.insertUser(userEntity);
         if(result<=0){
             return setResultError("注册失败");

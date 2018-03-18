@@ -23,7 +23,6 @@ import lombok.extern.slf4j.Slf4j;
 // 申明是个spring管理的bean
 @Component
 @Slf4j
-@Log
 public class LogAspectServiceApi {
     private JSONObject jsonObject = new JSONObject();
 
