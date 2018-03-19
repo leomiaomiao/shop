@@ -18,6 +18,8 @@ import java.util.LinkedHashMap;
 public class LoginController {
 
     private static final String LOGIN = "login";
+    private static final String INDEX = "redirect:/";
+
     @Autowired
     private MemberServiceFegin memberServiceFegin;
     //跳转到登录页面
@@ -43,6 +45,6 @@ public class LoginController {
             return LOGIN;
         }
         CookieUtil.addCookie(response,Constants.COOKIE_MEMEBER_TOKEN,memberToken,Constants.COOKIE_TOKEN_MEMBER_TIME);
-        return "";
+        return INDEX;
     }
 }

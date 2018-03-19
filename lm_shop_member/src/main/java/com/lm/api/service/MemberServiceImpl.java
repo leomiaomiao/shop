@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
@@ -91,7 +92,7 @@ public class MemberServiceImpl extends BaseApiService implements MemberService{
     }
 
     @Override
-    public ResponseBase findUserByToken(String token) {
+    public ResponseBase findUserByToken(@RequestParam("token") String token) {
         //1.验证参数
         if (StringUtils.isEmpty(token)){
             return setResultError("token不能为空");

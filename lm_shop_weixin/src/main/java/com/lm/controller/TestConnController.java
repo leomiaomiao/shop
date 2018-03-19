@@ -1,7 +1,9 @@
 package com.lm.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.lm.base.TextMessage;
 import com.lm.util.CheckUtil;
+import com.lm.util.HttpClientUtil;
 import com.lm.util.XmlUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +20,7 @@ import java.util.Map;
 @RestController
 public class TestConnController {
 
-
+        private static final String REQUEST_URL="http://api.qingyunke.com/api.php?key=free&appid=0&msg=";
 
         /*
         * signature	微信加密签名，signature结合了开发者填写的token参数和请求中的timestamp参数、nonce参数。
@@ -58,13 +60,23 @@ public class TestConnController {
                 String fromUserName = stringStringMap.get("FromUserName");
                 //3.消息内容
                 String content = stringStringMap.get("Content");
+                String resultJson = HttpClientUtil.doGet(REQUEST_URL + content);
+                JSONObject jsonObject = JSONObject.parseObject(resultJson);
+                Integer resultCode = jsonObject.getInteger("result");
                 String msg = null;
-                if (content.equals("刘淼")){
+                if (resultCode == 0) {
+                    String resultContent = jsonObject.getString("content");
+                    msg = setText(resultContent, toUserName, fromUserName);
+                }else{
+                    msg = setText("爱丹丹", toUserName, fromUserName);
+                }
+
+                /*if (content.equals("刘淼")){
                     //返回相关信息
                     msg = setText("爱丹丹", toUserName, fromUserName);
                 }else {
                     msg = setText("依然还是爱丹丹、爱丹丹", toUserName, fromUserName);
-                }
+                }*/
                 log.info("++++++++回复微信消息:{}+++++++++++++"+msg);
                 writer.println(msg);
                 break;

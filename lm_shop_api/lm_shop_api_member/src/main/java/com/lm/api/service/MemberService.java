@@ -4,6 +4,7 @@ import com.lm.base.ResponseBase;
 import com.lm.entity.UserEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @RequestMapping("/member")
@@ -20,5 +21,5 @@ public interface MemberService {
     ResponseBase login(@RequestBody UserEntity userEntity);
     //使用token进行登录
     @RequestMapping("/findUserByToken")
-    ResponseBase findUserByToken(String token);
+    ResponseBase findUserByToken(@RequestParam("token") String token);
 }
