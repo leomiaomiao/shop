@@ -7,7 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/lm_shop_common/lm_shop_common.iml" filepath="$PROJECT_DIR$/lm_shop_common/lm_shop_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/lm_shop_eurekaserver/lm_shop_eurekaserver.iml" filepath="$PROJECT_DIR$/lm_shop_eurekaserver/lm_shop_eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/lm_shop_member/lm_shop_member.iml" filepath="$PROJECT_DIR$/lm_shop_member/lm_shop_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_message/lm_shop_message.iml" filepath="$PROJECT_DIR$/lm_shop_message/lm_shop_message.iml" />
       <module fileurl="file://$PROJECT_DIR$/lm_shop_parent.iml" filepath="$PROJECT_DIR$/lm_shop_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_pc_web/lm_shop_pc_web.iml" filepath="$PROJECT_DIR$/lm_shop_pc_web/lm_shop_pc_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lm_shop_weixin/lm_shop_weixin.iml" filepath="$PROJECT_DIR$/lm_shop_weixin/lm_shop_weixin.iml" />
     </modules>
   </component>
 </project>

@@ -10,6 +10,9 @@
         <module name="lm_shop_common" />
         <module name="lm_shop_eurekaserver" />
         <module name="lm_shop_member" />
+        <module name="lm_shop_message" />
+        <module name="lm_shop_pc_web" />
+        <module name="lm_shop_weixin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,7 +21,10 @@
       <module name="lm_shop_common" target="1.8" />
       <module name="lm_shop_eurekaserver" target="1.8" />
       <module name="lm_shop_member" target="1.8" />
+      <module name="lm_shop_message" target="1.8" />
       <module name="lm_shop_parent" target="1.8" />
+      <module name="lm_shop_pc_web" target="1.8" />
+      <module name="lm_shop_weixin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
