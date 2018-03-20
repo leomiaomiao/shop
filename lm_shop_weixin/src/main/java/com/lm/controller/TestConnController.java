@@ -45,11 +45,9 @@ public class TestConnController {
     public void testConn(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
-        log.info("_________s收到消息:{}__________"+request);
         //1.将XML转换成map集合
         Map<String, String> stringStringMap = XmlUtils.parseXml(request);
         String msgType = stringStringMap.get("MsgType");
-
         //2.如果是文本消息，返回结果给微信端
         PrintWriter writer = response.getWriter();
         switch (msgType){
@@ -60,6 +58,7 @@ public class TestConnController {
                 String fromUserName = stringStringMap.get("FromUserName");
                 //3.消息内容
                 String content = stringStringMap.get("Content");
+                log.info("_________s收到消息:{}__________"+content);
                 String resultJson = HttpClientUtil.doGet(REQUEST_URL + content);
                 JSONObject jsonObject = JSONObject.parseObject(resultJson);
                 Integer resultCode = jsonObject.getInteger("result");

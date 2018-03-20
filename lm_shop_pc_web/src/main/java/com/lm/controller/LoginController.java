@@ -33,7 +33,8 @@ public class LoginController {
         //1.验证参数‘
         //2.调用登录接口，获取token
         ResponseBase login = memberServiceFegin.login(userEntity);
-        if (!login.equals(Constants.HTTP_RES_CODE_200)){
+
+        if (!login.getCode().equals(Constants.HTTP_RES_CODE_200)){
             request.setAttribute("error","账号或密码错误");
             return LOGIN;
         }

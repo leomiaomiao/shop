@@ -12,6 +12,10 @@ public class BaseApiService {
     public ResponseBase setResultError(String msg){
         return new ResponseBase(Constants.HTTP_RES_CODE_500,msg,null);
     }
+    //验证QQ账号没有绑定用户，提示绑定
+    public ResponseBase setResultError(Integer code,String msg){
+        return new ResponseBase(code,msg,null);
+    }
     //返回成功，有data值
     public ResponseBase setResultSuccess(Object data){
         return new ResponseBase(Constants.HTTP_RES_CODE_200,Constants.HTTP_RES_CODE_200_VALUE,data);

@@ -22,4 +22,11 @@ public interface MemberService {
     //使用token进行登录
     @RequestMapping("/findUserByToken")
     ResponseBase findUserByToken(@RequestParam("token") String token);
+    //根据openID查询用户
+    @RequestMapping("/findUserByOpenid")
+    ResponseBase findUserByOpenid(@RequestParam("openid")String openid);
+    //根据openID登录
+    @RequestMapping("/qqLogin")
+    ResponseBase qqLogin(@RequestBody UserEntity userEntity);
+
 }
