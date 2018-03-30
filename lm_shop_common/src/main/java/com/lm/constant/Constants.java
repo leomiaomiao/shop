@@ -16,10 +16,14 @@ public interface Constants {
     String MSG_EMAIL = "email";
     //会员token
     String TOKEN_MEMBER = "TOKEN_MEMBER";
+    //支付token
+    String TOKEN_PAY = "TOKEN_PAY";
     //会员token有效期
     Long TOKEN_MEMBER_TIME  = 60*60*24*90L;
     //会员token有效期
     int  COOKIE_TOKEN_MEMBER_TIME  = 60*60*24*90;
+    //支付token有效期
+    Long  TOKEN_PAY_TIME  = 60*15L;
     //cookie 会员token名称
     String COOKIE_MEMEBER_TOKEN = "cookie_memeber_token";
 }

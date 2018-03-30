@@ -16,6 +16,7 @@
         <module>lm_shop_message</module>
         <module>lm_shop_pc_web</module>
         <module>lm_shop_weixin</module>
+        <module>lm_shop_pay</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

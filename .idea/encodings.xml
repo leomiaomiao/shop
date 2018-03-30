@@ -4,10 +4,12 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_api/lm_shop_api_member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lm_shop_api/lm_shop_api_pay" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_eurekaserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_member" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lm_shop_pay" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_pc_web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lm_shop_weixin" charset="UTF-8" />
   </component>
